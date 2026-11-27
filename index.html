@@ -302,3 +302,206 @@
       justify-content: space-between;
       gap: 1rem;
     }
+
+    .project-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.16rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    .badge-done {
+      background: var(--green-soft);
+      color: var(--green);
+    }
+
+    .badge-progress {
+      background: var(--amber-soft);
+      color: var(--amber);
+    }
+
+    .project-tag {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.76rem;
+      color: var(--muted);
+    }
+
+    .project-card h3 {
+      font-size: 1.08rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .project-card p {
+      font-size: 0.91rem;
+      color: var(--muted);
+    }
+
+    .project-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.83rem;
+      color: var(--muted);
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .project-foot a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .project-foot a:hover {
+      text-decoration: underline;
+    }
+
+    /* Members list */
+    .members-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 0.85rem;
+    }
+
+    .member-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.95rem 1.05rem;
+    }
+
+    .member-name {
+      font-weight: 600;
+      font-size: 0.98rem;
+    }
+
+    .member-role {
+      font-size: 0.84rem;
+      color: var(--muted);
+      margin-top: 0.1rem;
+    }
+
+    .member-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.8rem;
+      color: var(--accent);
+    }
+
+    .member-link:hover {
+      text-decoration: underline;
+    }
+
+    .join-note {
+      margin-top: 1.15rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 1.15rem;
+    }
+
+    .contact-card h3 {
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .contact-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 0.85rem;
+    }
+
+    .copy-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.42rem 0.65rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.82rem;
+    }
+
+    .copy-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.2rem 0.55rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .copy-btn:hover {
+      border-color: #bbb7ae;
+    }
+
+    footer {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 2.5rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 2.25rem;
+      }
+
+      .stats-strip {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+      }
+
+      .nav-links {
+        gap: 0.85rem;
+        font-size: 0.86rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#about" class="brand">
+        <span class="brand-icon">&lt;/&gt;</span>
+        <span>Your School Hack Club</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about" class="active">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#members">Members</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
