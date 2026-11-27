@@ -199,3 +199,106 @@
       border-radius: 10px;
       padding: 0.65rem;
     }
+
+    .hero-media img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 6px;
+      background: #eceae4;
+    }
+
+    .hero-caption {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+      padding: 0 0.2rem;
+    }
+
+    /* Quick stats strip */
+    .stats-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2.25rem;
+      padding-top: 1.75rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .stat-box strong {
+      display: block;
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+    }
+
+    .stat-box span {
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    /* Section headings */
+    .section-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-head h2 {
+      font-size: 1.55rem;
+      letter-spacing: -0.02em;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    /* Filter tabs */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .filter-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .filter-btn:hover {
+      color: var(--ink);
+    }
+
+    .filter-btn.active {
+      background: var(--ink);
+      color: #fff;
+      border-color: var(--ink);
+    }
+
+    /* Projects grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 1rem;
+    }
+
+    .project-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+    }
